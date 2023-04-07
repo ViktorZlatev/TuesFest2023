@@ -111,7 +111,7 @@ def email():
     if request.method == 'POST':
         mycode = request.form.get('code')
         if mycode == str(code):
-            return redirect('/game')
+            return redirect('/home')
     return render_template("email.html")
 
 
